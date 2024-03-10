@@ -1,0 +1,32 @@
+<!-- INFO this is the test.html file from Natalie C set up to work with Mocha and Chai for unit testing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css"> <!-- this line is required -- do not change-->
+</head>
+<body>
+    <div id="mocha"><p><a href=".">Index</a></p></div>  <!-- this line is required -- do not change-->
+    <div id="messages"></div>  <!-- this line is required -- do not change-->
+    <div id="fixtures"></div>   <!-- this line is required -- do not change-->
+    <script src="node_modules/mocha/mocha.js"></script>  <!-- this line is required -- do not change-->
+    <script src="node_modules/chai/chai.js"></script>  <!-- this line is required -- do not change-->
+     <!-- the 3 lines below are required -- do not change-->
+    <script>  
+        mocha.setup('bdd'); 
+    </script>
+    
+    <!-- INFO you need to change these 2 line to link to your code file and then your test code file -->
+    <script src="game.js"></script>
+    <script src="game.test.js"></script>
+
+  <!-- the 3 lines below are required -- do not change-->
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>
